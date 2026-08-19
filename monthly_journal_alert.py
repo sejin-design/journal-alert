@@ -244,9 +244,9 @@ def send_to_slack(webhook_url: str, message: dict):
 # ------------------------------------------------------------------
 def main():
     today = datetime.date.today()
-    if not is_first_monday_of_month(today):
-        print(f"오늘({today})은 매달 첫째 주 월요일이 아니므로 실행하지 않습니다.")
-        return
+    # if not is_first_monday_of_month(today):
+    #     print(f"오늘({today})은 매달 첫째 주 월요일이 아니므로 실행하지 않습니다.")
+    #     return
 
     slack_webhook = os.environ.get("SLACK_WEBHOOK_URL")
     anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
