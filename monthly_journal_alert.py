@@ -271,5 +271,5 @@ def main():
     print(f"완료: {SLACK_CHANNEL_NOTE} 채널로 전송했습니다.")
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
